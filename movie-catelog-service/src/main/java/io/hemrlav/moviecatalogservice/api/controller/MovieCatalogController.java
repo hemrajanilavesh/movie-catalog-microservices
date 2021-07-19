@@ -1,20 +1,14 @@
 package io.hemrlav.moviecatalogservice.api.controller;
 
-import com.netflix.discovery.converters.Auto;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import io.hemrlav.moviecatalogservice.api.service.MovieInfoService;
 import io.hemrlav.moviecatalogservice.api.service.UserRatingDataService;
 import io.hemrlav.moviecatalogservice.model.CatalogItem;
-import io.hemrlav.moviecatalogservice.model.Movie;
-import io.hemrlav.moviecatalogservice.model.Rating;
 import io.hemrlav.moviecatalogservice.model.UserRating;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 

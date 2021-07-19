@@ -5,7 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
+/**
+ * Model class which as the response of the API
+ */
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter @Setter
